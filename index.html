@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cart Icons</title>
+  </head>
+  <body>
+    <div class="outercontainer">
+      <div class="container">
+        <h2>Варианты внешнего вида корзины</h2>
+        <div data-layout="SMALL_ICON" class="ec-cart-widget visible"></div>
+        <div
+          data-layout="SMALL_ICON_COUNTER"
+          class="ec-cart-widget invisible"
+        ></div>
+        <div data-layout="COUNTER_ONLY" class="ec-cart-widget invisible"></div>
+        <div data-layout="TITLE_COUNTER" class="ec-cart-widget invisible"></div>
+        <div
+          data-layout="MEDIUM_ICON_COUNTER"
+          class="ec-cart-widget invisible"
+        ></div>
+        <div
+          data-layout="MEDIUM_ICON_TITLE_COUNTER"
+          class="ec-cart-widget invisible"
+        ></div>
+        <div
+          data-layout="BIG_ICON_TITLE_SUBTOTAL"
+          class="ec-cart-widget invisible"
+        ></div>
+        <div
+          data-layout="BIG_ICON_DETAILS_SUBTOTAL"
+          class="ec-cart-widget invisible"
+        ></div>
+        <div>
+          <script
+            data-cfasync="true"
+            type="text/javascript"
+            src="https://app.ecwid.com/script.js?9967568&data_platform=code&data_date=2019-10-24"
+            charset="utf-8"
+          ></script>
+
+          <script type="text/javascript">
+            Ecwid.init();
+          </script>
+        </div>
+        <div class="param-select">
+          <label for="select" class="label"> SMALL_ICON </label> <br />
+          <select class="dl-param-select" id="select">
+            <option value="SMALL_ICON">Вариант 1</option>
+            <option value="SMALL_ICON_COUNTER">Вариант 2</option>
+            <option value="COUNTER_ONLY">Вариант 3</option>
+            <option value="TITLE_COUNTER">Вариант 4</option>
+            <option value="MEDIUM_ICON_COUNTER">Вариант 5</option>
+            <option value="MEDIUM_ICON_TITLE_COUNTER">Вариант 6</option>
+            <option value="BIG_ICON_TITLE_SUBTOTAL">Вариант 7</option>
+            <option value="BIG_ICON_DETAILS_SUBTOTAL">Вариант 8</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="widjet_change.js"></script>
+  </body>
+</html>
